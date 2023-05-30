@@ -38,7 +38,7 @@ while (isNaN(y)) {
     y = parseFloat(prompt('Для обчислювання введить значення Y:'));
 }
 
-function calculateResult(x, y, znak) {
+function doMath(x, y, znak) {
     if (znak === '^') {
         return Math.pow(x, y);
     } else {
@@ -62,7 +62,7 @@ function calculateResult(x, y, znak) {
     }
 }
 
-let result = calculateResult(x, y, znak);
+let result = doMath(x, y, znak);
 console.log(result);
 
 // 3 завдання
@@ -77,7 +77,7 @@ function fillArray() {
     let innerArray = [];
 
     for (let j = 1; j <= internalArray; j++) {
-        let elementArray = parseInt(prompt(`Введить [${j}] - значеня: - [${i}] елементу основного масиву:`));
+        let elementArray = (prompt(`Введить [${j}] - значеня: - [${i}] елементу основного масиву:`));
         innerArray.push(elementArray);
     }
 
